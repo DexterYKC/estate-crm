@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 36% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 36% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 36% 11%;
+    --primary: 222 47% 20%;
+    --primary-foreground: 40 30% 96%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 222 47% 20%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 43 55% 54%;
+    --accent-foreground: 222 47% 20%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 222 47% 20%;
+    --radius: 0.75rem;
+
+    --navy: 222 47% 20%;
+    --gold: 43 55% 54%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; font-family: var(--font-inter), system-ui, sans-serif; }
+  h1,h2,h3,h4 { font-family: var(--font-playfair), Georgia, serif; letter-spacing: -0.01em; }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-playfair), Georgia, serif; }
+  .text-navy { color: hsl(222 47% 20%); }
+  .bg-navy { background-color: hsl(222 47% 20%); }
+  .text-gold { color: hsl(43 55% 54%); }
+  .bg-gold { background-color: hsl(43 55% 54%); }
+  .border-gold { border-color: hsl(43 55% 54%); }
+  .hover-lift { transition: all .35s cubic-bezier(.2,.7,.2,1); }
+  .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -20px rgba(27,42,74,.25); }
+  .fade-in { animation: fadeIn .6s ease-out both; }
+  .fade-in-up { animation: fadeInUp .7s ease-out both; }
+}
+
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(16px) } to { opacity: 1; transform: translateY(0) } }
