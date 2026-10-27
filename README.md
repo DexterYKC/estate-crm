@@ -47,3 +47,7 @@ Demo logins are listed on the `/login` page (seed accounts only: `admin@agence.c
 ## Status
 
 Working demo, derived from a real agency project. Not packaged as a generic product.
+
+## License
+
+[MIT](LICENSE): you are free to use, adapt and build on this code. Credit is appreciated.
