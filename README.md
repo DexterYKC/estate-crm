@@ -4,6 +4,38 @@ A full-stack **real-estate agency platform**: a public showcase website for buye
 
 It started as a client project (agency site + internal tooling). This repo is a **sanitized demo export**: all branding, credentials and client data were removed, and the seed data is fictional ("Prestige Immobilier", Unsplash photos, placeholder phone numbers). The UI is in French; code and docs are in English.
 
+## Screenshots
+
+All captured on the built-in fictional demo data (agency, agents, clients and amounts are made up).
+
+**Public website**
+
+![Featured properties on the home page](docs/screenshots/website-home.jpg)
+![Catalogue with search filters](docs/screenshots/website-listings.jpg)
+![Property page with gallery and contact form](docs/screenshots/website-property.jpg)
+
+**CRM back-office**
+
+**Dashboard:** key figures, latest requests and reminders.
+
+![CRM dashboard](docs/screenshots/crm-dashboard.png)
+
+**Listings with mandates:** mandate type, and an expiry warning that feeds the automatic reminders.
+
+![Listings and mandates](docs/screenshots/crm-listings-mandates.png)
+
+**Requests:** one record from first contact to decision (new, in progress, accepted, refused), with agent and source.
+
+![Requests pipeline](docs/screenshots/crm-requests.png)
+
+**Deal tracking:** closed deals, revenue and per-agent performance.
+
+![Deal tracking](docs/screenshots/crm-deals.png)
+
+**Accounting:** invoices generated from accepted deals, manual entries, agent commissions with payout status, and CSV export.
+
+![Accounting and commissions](docs/screenshots/crm-accounting.png)
+
 ## Features
 
 **Public website**
